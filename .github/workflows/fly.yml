@@ -10,9 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: superfly/flyctl-actions/setup-flyctl@master
-      - run: rm -rf node_modules
-      - run: npm cache clean
-      - run: npm install --unsafe-perm
+      - run: cat /root/.npm/_logs/2023-03-21T10_00_59_881Z-debug-0.log
       - run: flyctl deploy --remote-only
         env:
           FLY_API_TOKEN: ${{ secrets.FLY }}
