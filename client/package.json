@@ -77,7 +77,7 @@
     ]
   },
   "devDependencies": {
-    "node-sass": "^7.0.1",
+    "node-sass": "^8.0.0",
     "webpack": "^5.72.0"
   }
 }
