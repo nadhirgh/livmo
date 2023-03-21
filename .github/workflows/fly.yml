@@ -11,7 +11,8 @@ jobs:
       - uses: actions/checkout@v3
       - uses: superfly/flyctl-actions/setup-flyctl@master
       - run: npm show node-sass version
-      - run: npm rebuild node-sass
+      - run: npm i --unsafe-perm node-sass
+      - run: npm show node-sass version
       - run: flyctl deploy --remote-only
 
      
