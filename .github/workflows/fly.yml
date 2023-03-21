@@ -10,6 +10,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: superfly/flyctl-actions/setup-flyctl@master
+      - run: npm show node-sass version
+      - run: npm list -g node-sass
+      - run: npm list node-sass
       - run: flyctl deploy --remote-only
+
+     
         env:
           FLY_API_TOKEN: ${{ secrets.FLY }}
