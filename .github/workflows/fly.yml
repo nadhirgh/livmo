@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: superfly/flyctl-actions/setup-flyctl@master
       - run: npm show node-sass version
-      - run: npm config set ignore-scripts false
+      - run: ln -s /usr/bin/nodejs /usr/bin/node
       - run: flyctl deploy --remote-only
 
      
