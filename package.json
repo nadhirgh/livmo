@@ -4,7 +4,6 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "build": "npm install && npm run build",
     "deploy": "flyctl deploy --remote-only",
     "start": "node server.js",
     "dev": "SET NODE_ENV=DEVELOPMENT& nodemon server",
