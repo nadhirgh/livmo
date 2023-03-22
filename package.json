@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "build": "webpack --config webpack.config.js"
     "deploy": "flyctl deploy --remote-only",
     "start": "node server.js",
     "dev": "SET NODE_ENV=DEVELOPMENT& nodemon server",
